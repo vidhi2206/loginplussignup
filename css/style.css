@@ -1,0 +1,205 @@
+/* CSS style sheet*/
+
+body{
+		background-color:#d8dce1;
+<!--	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6), url(imgs/project.jpg)); not loading 
+ <!--   background: url(imgs/dark-black-website-background.jpg);
+ <!--   background-position:center;
+
+ background:cover;
+
+	
+	
+}
+
+#main-wrapper{
+	width:500px;
+	
+	margin:0 auto;
+	background:white;
+	padding:5px;
+	border-radius:5px;
+	border:2px solid #2c3e50;
+}
+
+.down{
+	width:70px;
+	text-align:center;
+	border-radius:100%;
+}
+
+.myform{
+	width:450px;
+	margin:0 auto;
+
+}
+
+.inputvalues{
+	width:430px;
+	margin:10 auto;
+	height:20px;
+	padding:3px;
+	border:2px solid #95a5a6;
+	border-radius:4px;
+}
+
+#login_btn{
+	margin-top:10px;
+	background-color:#118958;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#login_btn:hover{
+	background-color:#7f8c8d;
+	cursor:pointer;
+}
+
+
+
+
+#register_btn{
+<!--	margin-bottom:20px;
+<!--	margin-top:10px;
+	background-color:#2980b9;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;	
+}
+
+#signup_btn{
+	margin-top:10px;
+	background-color:#2980b9;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#signup_btn:hover{
+	background-color:#7f8c8d;
+	cursor:pointer;
+}
+
+
+#back_btn{
+	margin-bottom:20px;
+<!--	margin-top:10px;
+	background-color:#e74c3c;
+	padding:5px;
+	color:white;
+	width:30%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;	
+}
+
+#back_btn:hover{
+	background-color:#ea6153;
+	
+}
+
+#submit{
+	margin-top:10px;
+	margin-bottom:20px;
+	background-color:#11679b;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#submit:hover{
+	background-color:#7f8c8d;
+	cursor:pointer;
+}
+
+#next_btn{
+	margin-bottom:50px;
+	float:right;
+	margin-top:10px;
+	background-color:#063220;
+	padding:5px;
+	color:white;
+	width:30%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;	
+}
+
+
+#logout_btn{
+	margin-bottom:20px;
+	margin-top:10px;
+	background-color:#c0392b;
+	padding:5px;
+	color:white;
+	width:100%;
+	text-align:center;
+	border-radius:4px;
+	font-size:18px;
+	font-weight:bold;
+}
+
+#logout_btn:hover{
+	background-color:#7f8c8d;
+	cursor:pointer;
+}
+
+
+
+
+
+
+p{
+	font-family:sans serif;
+	text-align:center;
+	font-size:15px;
+	color:#66150d;
+}
+
+
+h2{
+	font-family:Times New Roman;
+	text-align:center;
+	font-size:30px;
+	color:#0a2a53;
+
+}
+
+
+h3{
+	font-family:Roboto;
+	text-align:center;
+	font-size:20px;
+	color:#072c42;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
