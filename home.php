@@ -1,16 +1,36 @@
 <?php
-	 session_start();
-	 require 'dbconfig/config.php';
-?>
+	session_start();
+	require 'dbconfig/config.php';
+	$query="select username,email from user where username='".$_SESSION['username']."'";
+	$query_run=mysqli_query($con,$query);
+			
+	if(mysqli_num_rows($query_run)>0){
+		
+		while($row=mysqli_fetch_assoc($query_run)){
+			echo "<div align=\"center\">";
+			echo "<br>Your <b><i>Profile</i></b> is as follows:<br>";
+			echo "<b>Username:</b>".$row['username'];
+			echo "<br/><b>Email:</b>".$row['email'];
+			echo "</div>";
+			
+		}
 
+	}
+	else{
+		echo "No results found";
+	}
+?>
+	 
 <!DOCTYPE html>
 <html>
 <head>
 <title><b>Home Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body >
-	<div id="main-wrapper">
+	<div class="container">
 	<center>
 	<h2><b>Complete Your Profile</h2>
 	<h3><b>Welcome <?php echo $_SESSION['username'] ?></h3>

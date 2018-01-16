@@ -6,10 +6,12 @@
 <html>
 <head>
 <title>Last page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div id="main-wrapper">
+	<div class="container">
 	<center>
 	
 	<h3>Logout  <?php echo $_SESSION['username'] ?></h3>

@@ -5,6 +5,8 @@ require 'dbconfig/config.php';
 <html>
 <head>
 <title>Registeration Page</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
 <link rel="stylesheet" href="css/style.css">
 
 <script type="text/javascript">
@@ -21,9 +23,9 @@ function PreviewImage(){
 </head>
 <body >
 <form class="myform" action="register.php" method="post" enctype="multipart/form-data">
-	<div id="main-wrapper">
+	<div class="container">
 	<center><h2>Registeration Form</h2>
-	<img id="uploadPreview" src="imgs/download.png" class="down"/><br>
+	<img id="uploadPreview" src="imgs/download.png" class="down"/><br><br>
 	<input type="file" id="imglink" name="imglink" accept=".jpg,.jpeg,.png" onchange="PreviewImage();"/>
 	</center>
 	
@@ -43,7 +45,7 @@ function PreviewImage(){
 		<input name="submit_btn" type="submit" id="signup_btn" value="Sign Up"/><br>
 
 		<a href="index.php"><input type="button" id="back_btn" value="Back"/></a>
-		<p>Go Back to Login</p>
+		<h6>Go Back to Login</h6>
 	</form>
 	<?php
 		if(isset($_POST['submit_btn'])){
@@ -78,7 +80,8 @@ function PreviewImage(){
 			}
 			else{
 				move_uploaded_file($img_tmp,$target_file);
-				$query="insert into user values('$username','$password','$email','$target_file')";
+				$hashedPass = password_hash("$password", PASSWORD_DEFAULT);
+				$query="insert into user values('$username','$hashedPass','$email','$target_file')";
 				$query_run=mysqli_query($con,$query);
 				if($query_run>0){
 					echo '<script type="text/javascript"> alert("user registered..Go to login page to login")</script>';
