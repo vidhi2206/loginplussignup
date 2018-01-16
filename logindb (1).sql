@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 26, 2017 at 06:42 AM
+-- Generation Time: Jan 16, 2018 at 09:06 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -35,14 +35,6 @@ CREATE TABLE `profile` (
   `contact_no` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `profile`
---
-
-INSERT INTO `profile` (`fullname`, `email`, `address`, `contact_no`) VALUES
-('aarohi sharma', 'aarohi@gmail.com', 'hostel 10,11 ratanada jodhpur', '9432167895'),
-('vidhi gupta', 'vidhi@gmail.com', 'alwar', '9602455634');
-
 -- --------------------------------------------------------
 
 --
@@ -51,7 +43,7 @@ INSERT INTO `profile` (`fullname`, `email`, `address`, `contact_no`) VALUES
 
 CREATE TABLE `user` (
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `email` varchar(100) NOT NULL,
   `imglink` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -61,8 +53,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `password`, `email`, `imglink`) VALUES
-('aarohi', '1234', 'aarohi@gmail.com', 'uploads/download.jpg'),
-('vidhi', 'vidhi', 'vidhi@gmail.com', 'uploads/download (1).jpg');
+('vidhi', '$2y$10$F.czf7INAhat4GzzmiirbOFv6Dg8X546Ts6FUPT1qw27jnPt/1Fny', 'vidhi@gmail.com', 'uploads/download.jpg');
 
 --
 -- Indexes for dumped tables
